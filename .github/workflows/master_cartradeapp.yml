@@ -24,7 +24,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build --if-present
+          npm run build --prod --if-present
           npm run test --if-present
 
       - name: Zip artifact for deployment
@@ -57,6 +57,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'CarTradeApp'
-          slot-name: 'Production'
-          package: .
+          # slot-name: 'Production'
+          package: ./dist/car-trade-app
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_74F6204EF5A44B7CAE5603F8E0F567C7 }}
