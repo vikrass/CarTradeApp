@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'CarTradeApp'
           # slot-name: 'Production'
-          package: .
+          package: ./dist/car-trade-app
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_74F6204EF5A44B7CAE5603F8E0F567C7 }}
