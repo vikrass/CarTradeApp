@@ -1,4 +1,5 @@
-<div style="height: 20;" *ngFor="let car of cars">
-  <div>{{car.CompanyName}}</div>
-  <div>{{car.CarName}}</div>
+<div *ngIf="cars.length > 0">
+  <div *ngFor="let car of cars; index as i">
+    <div>{{i+1}} {{car.companyName}} {{car.carName}} {{car.variant}} {{car.engineCapacity}} {{car.fuelType}}</div>
+  </div>
 </div>

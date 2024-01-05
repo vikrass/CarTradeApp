@@ -1,11 +1,11 @@
  export interface Car
 {
-  CompanyName: string;
-  CarName: string;
-  Variant: string;
-  EngineCapacity: number;
-  FuelType: string;
-  ManufacturingYear: number;
-  RegistrationYear: number;
-  SellerPrice: number;
+  companyName: string;
+  carName: string;
+  variant: string;
+  engineCapacity: number;
+  fuelType: string;
+  manufacturingYear: number;
+  registrationYear: number;
+  sellerPrice: number;
 }
